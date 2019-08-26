@@ -1,0 +1,51 @@
+header {
+    background: url('../images/header-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 92vh;
+    min-height: 500px;
+
+    .header-container {
+        width: 50%;
+        margin-left: 40px;
+        padding: 150px 0 0;
+        line-height: 1;
+        
+        h1 {
+            font-size: 4.0rem;
+        }
+
+        p {
+            font-size: 2.2rem;
+        }
+    } // .header-container
+
+    .sign-up-container{
+        .centerContent(center, center, column);
+        width: 25%;
+
+        button{
+            width: 100%;
+            background: @deepBlue;
+            font-size: 1.8rem;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: @plainTextFont;
+            transition: all .3s;
+
+            &:hover {
+                background: @hoverBlue;
+                color: @fadedWhite;
+            }
+        }
+
+        span {
+            font-family: @plainTextFont;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    } // .sign-up-container
+} // header
