@@ -39,6 +39,7 @@ header {
             &:hover {
                 background: @hoverBlue;
                 color: @fadedWhite;
+                cursor: pointer;
             }
         }
 
@@ -46,6 +47,11 @@ header {
             font-family: @plainTextFont;
             text-align: center;
             font-size: 1.3rem;
+            transition: all .3s;
+
+            a:hover {
+                text-decoration: none;
+            }
         }
     } // .sign-up-container
 } // header

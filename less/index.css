@@ -407,11 +407,16 @@ header .sign-up-container button {
 header .sign-up-container button:hover {
   background: rgba(50, 100, 180, 0.8);
   color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
 }
 header .sign-up-container span {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 1.3rem;
+  transition: all 0.3s;
+}
+header .sign-up-container span a:hover {
+  text-decoration: none;
 }
 .our-mission-section {
   display: flex;
@@ -575,7 +580,19 @@ footer .bottom-nav-bar a {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
   color: black;
+  transition: all 0.3s;
+}
+footer .bottom-nav-bar a:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 footer span {
   font-family: 'Roboto', sans-serif;
+}
+footer span a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+footer span a:hover {
+  color: white;
 }

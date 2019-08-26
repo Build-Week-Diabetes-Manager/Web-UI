@@ -16,11 +16,26 @@ footer {
             font-size: 1.6rem;
             font-family: @plainTextFont;
             color: black;
-        }
+            transition: all .3s;
+
+            &:hover {
+                color: @fadedWhite;
+            }
+        } // a
 
     } // .bottom-nav-bar
     
     span {
         font-family: @plainTextFont;
-    }
+
+        a {
+            text-decoration: none;
+            color: black;
+            transition: all .3s;
+
+            &:hover {
+                color: white;
+            }
+        } // a
+    } // span
 } // footer
