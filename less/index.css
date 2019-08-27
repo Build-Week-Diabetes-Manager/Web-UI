@@ -860,7 +860,7 @@ header .sign-up-container span a:hover {
   font-family: 'Roboto', sans-serif;
   transition: all 0.3s;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .signup-container .signup-box form .submit-button {
     width: 70%;
   }
@@ -936,7 +936,7 @@ header .sign-up-container span a:hover {
   font-family: 'Roboto', sans-serif;
   transition: all 0.3s;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .signin-container .signin-box form .submit-button {
     width: 70%;
   }
