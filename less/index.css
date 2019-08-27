@@ -707,6 +707,60 @@ header .sign-up-container span a:hover {
     width: 80%;
   }
 }
+.our-team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: rgba(84, 222, 253, 0.6);
+  width: 100%;
+  flex-wrap: wrap;
+}
+.our-team-section .team-mate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  line-height: 1;
+  padding: 40px 0;
+}
+.our-team-section .team-mate img {
+  width: 60%;
+  height: 75%;
+  max-height: 300px;
+}
+.our-team-section .team-mate .team-mate-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 30px;
+  margin-top: 10px;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+}
+.our-team-section .team-mate .team-mate-info h2 {
+  font-size: 2.6rem;
+}
+.our-team-section .team-mate .team-mate-info p {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-top: -18px;
+}
+.our-team-section .team-mate .team-mate-info i {
+  font-size: 3.5rem;
+  color: black;
+  margin-top: -12px;
+  transition: all 0.3s;
+}
+.our-team-section .team-mate .team-mate-info i:hover {
+  transform: scale(1.2);
+}
 footer {
   display: flex;
   justify-content: center;
