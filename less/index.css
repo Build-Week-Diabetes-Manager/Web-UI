@@ -536,7 +536,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 1000px) {
   .our-mission-section .mission-container .mission-img {
-    width: 60%;
+    width: 40%;
   }
 }
 @media (max-width: 500px) {
@@ -618,7 +618,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 1000px) {
   .benefits-section .benefits-container .benefits-img {
-    width: 60%;
+    width: 40%;
   }
 }
 @media (max-width: 500px) {
@@ -699,7 +699,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 1000px) {
   .process-section .process-container .process-img {
-    width: 60%;
+    width: 40%;
   }
 }
 @media (max-width: 500px) {
