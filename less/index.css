@@ -707,6 +707,25 @@ header .sign-up-container span a:hover {
     width: 80%;
   }
 }
+.about-team-banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 92vh;
+  background: url('../AboutImages/team-work.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-team-banner h1 {
+  font-size: 5rem;
+  width: 40%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  text-align: center;
+}
 .our-team-section {
   display: flex;
   justify-content: center;
