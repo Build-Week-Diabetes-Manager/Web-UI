@@ -20,9 +20,14 @@
 
 .our-team-section {
     .centerContent(center, center, row);
-    background-image: linear-gradient(@lightBlue, @lightGreen);
+    background: @fadedWhite;
     width: 100%;
     flex-wrap: wrap;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        flex-wrap: no-wrap;
+    }
 
     .team-mate {
         .centerContent(center, center, column);
@@ -32,19 +37,18 @@
 
         img {
             width: 60%;
+            min-width: 200px;
             height: 75%;
             max-height: 300px;
+            box-shadow: 8px 5px 10px 0px @fadedBlack;
         }
 
         .team-mate-info{
             .centerContent(center, center, column);
-            background: @fadedWhite;
             padding: 10px 30px;
             margin-top: 10px;
             width: 50%;
             text-align: center;
-            border-radius: 5px;
-            box-shadow: 5px 5px 10px 0px @fadedBlack;
 
             h2 {
                 font-size: 2.6rem;
