@@ -5,6 +5,10 @@ header {
     background-position: center;
     height: 92vh;
     min-height: 500px;
+    
+    @media @tablet {
+        min-height: 800px;
+    }
 
     .header-container {
         width: 50%;
@@ -24,6 +28,10 @@ header {
     .sign-up-container{
         .centerContent(center, center, column);
         width: 25%;
+
+        @media @tablet {
+            width: 80%;
+        }
 
         button{
             width: 100%;

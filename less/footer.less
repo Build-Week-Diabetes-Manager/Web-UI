@@ -5,11 +5,16 @@ footer {
     background: @deepGreen;
     font-size: 1.4rem;
     line-height: 1.5;
+    padding-bottom: 20px;
 
     .bottom-nav-bar{
         .centerContent(space-around, center, row);
         width: 40%;
         margin: 12px 0;
+
+        @media @tablet {
+            width: 100%;
+        }
 
         a {
             text-decoration: none;
@@ -17,6 +22,11 @@ footer {
             font-family: @plainTextFont;
             color: black;
             transition: all .3s;
+            text-align: center;
+    
+            @media @tablet {
+                width: 100%;    
+            }
 
             &:hover {
                 color: @fadedWhite;

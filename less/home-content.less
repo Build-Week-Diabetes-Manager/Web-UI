@@ -7,6 +7,10 @@
     min-height: 650px;
     background: @midGreen;
 
+    @media @tablet {
+        min-height: 1300px;
+    }
+
     h2 {
         font-size: 3.4rem;
         letter-spacing: 8px;
@@ -20,6 +24,10 @@
         .centerContent(space-evenly, center, row);
         padding-top: 40px;
 
+        @media @tablet {
+            .centerContent(center, center, column-reverse);
+        }    
+
         .mission-text-container {
             width: 40%;
             background: white;
@@ -29,6 +37,11 @@
             border-radius: 5px;
             box-shadow: 5px 5px 10px 0px @fadedBlack;
     
+            @media @tablet {
+                margin-top: 50px;
+                width: 70%;
+            }        
+
             h3 {
                 font-size: 3.0rem;
             }
@@ -41,8 +54,16 @@
         .mission-img {
             width: 30%;
             border-radius: 5px;
-            box-shadow: 5px 5px 10px 0px @fadedBlack;        
-        }
+            box-shadow: 5px 5px 10px 0px @fadedBlack;
+            
+            @media @tablet {
+                width: 60%;
+            }
+
+            @media @phone {
+                width: 80%;
+            }
+        } //.mission-img
     } // .mission-container
 } // .our-mission-section
 
@@ -55,6 +76,11 @@
     min-height: 650px;
     background: @lightBlue;
 
+    @media @tablet {
+        min-height: 1300px;
+    }
+
+
     h2 {
         font-size: 3.4rem;
         letter-spacing: 8px;
@@ -62,11 +88,20 @@
         padding: 6px 20px;
         border-radius: 5px;
         box-shadow: 5px 5px 10px 0px @fadedBlack;
+
+        @media @tablet {
+            width: 70%;
+            text-align: center;
+        }
     }
 
     .benefits-container{
         .centerContent(space-evenly, center, row-reverse);
         margin-top: 40px;
+
+        @media @tablet {
+            .centerContent(center, center, column-reverse);
+        }    
 
         .benefits-text-container {
             width: 40%;
@@ -76,6 +111,12 @@
             border-left-width: 5px;
             border-radius: 5px;
             box-shadow: 5px 5px 10px 0px @fadedBlack;
+
+            @media @tablet {
+                margin-top: 50px;
+                width: 70%;
+                padding-bottom: 0;
+            }
     
             h3 {
                 font-size: 3.0rem;
@@ -90,7 +131,15 @@
             width: 30%;
             border-radius: 5px;
             box-shadow: 5px 5px 10px 0px @fadedBlack;
-        }
+            
+            @media @tablet {
+                width: 60%;
+            }
+
+            @media @phone {
+                width: 80%;
+            }
+        } // .benefits-img
     } // .benefits-container
 } // .benefits-section
 
@@ -103,6 +152,10 @@
     min-height: 700px;
     background: @lightestGreen;
 
+    @media @tablet {
+        min-height: 1300px;
+    }
+
     h2 {
         font-size: 3.4rem;
         letter-spacing: 8px;
@@ -110,11 +163,20 @@
         padding: 6px 20px;
         border-radius: 5px;
         box-shadow: 5px 5px 10px 0px @fadedBlack;
+
+        @media @tablet {
+            width: 70%;
+            text-align: center;
+        }
     }
 
     .process-container{
         .centerContent(space-evenly, center, row);
         margin-top: 40px;
+
+        @media @tablet {
+            .centerContent(center, center, column-reverse);
+        }
 
         .process-text-container {
             width: 40%;
@@ -124,6 +186,11 @@
             border-left-width: 5px;
             border-radius: 5px;
             box-shadow: 5px 5px 10px 0px @fadedBlack;
+
+            @media @tablet {
+                margin-top: 50px;
+                width: 70%;
+            }
     
             h3 {
                 font-size: 3.0rem;
@@ -138,7 +205,15 @@
             width: 30%;
             border-radius: 5px;
             box-shadow: 5px 5px 10px 0px @fadedBlack;
-        }
+
+            @media @tablet {
+                width: 60%;
+            }
+
+            @media @phone {
+                width: 80%;
+            }
+        } // .process-img
     } // .process-container
 } // .process-section
 

@@ -316,6 +316,12 @@ body {
   margin: 0 auto;
   margin-top: 60px;
 }
+@media (max-width: 800px) {
+  body {
+    margin-top: 0;
+    width: 100%;
+  }
+}
 h1,
 h2,
 h3,
@@ -340,16 +346,42 @@ p {
   position: fixed;
   top: 0;
 }
+@media (max-width: 800px) {
+  .top-nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 235px;
+    position: static;
+    width: 100%;
+  }
+}
 .top-nav-bar h1 {
   font-size: 2.1rem;
   margin-left: 3%;
 }
+@media (max-width: 800px) {
+  .top-nav-bar h1 {
+    margin: 20px 0 0;
+  }
+}
 .top-nav-bar .nav-links {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   flex-direction: row;
   width: 60%;
+}
+@media (max-width: 800px) {
+  .top-nav-bar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 100%;
+  }
 }
 .top-nav-bar .nav-links a {
   width: 100px;
@@ -362,6 +394,11 @@ p {
   color: black;
   transition: all 0.3s;
 }
+@media (max-width: 800px) {
+  .top-nav-bar .nav-links a {
+    width: 96%;
+  }
+}
 .top-nav-bar .nav-links a:hover {
   background: rgba(50, 100, 180, 0.8);
   color: rgba(255, 255, 255, 0.8);
@@ -373,6 +410,11 @@ header {
   background-position: center;
   height: 92vh;
   min-height: 500px;
+}
+@media (max-width: 800px) {
+  header {
+    min-height: 800px;
+  }
 }
 header .header-container {
   width: 50%;
@@ -392,6 +434,11 @@ header .sign-up-container {
   align-items: center;
   flex-direction: column;
   width: 25%;
+}
+@media (max-width: 800px) {
+  header .sign-up-container {
+    width: 80%;
+  }
 }
 header .sign-up-container button {
   width: 100%;
@@ -429,6 +476,11 @@ header .sign-up-container span a:hover {
   min-height: 650px;
   background: rgba(0, 210, 145, 0.6);
 }
+@media (max-width: 800px) {
+  .our-mission-section {
+    min-height: 1300px;
+  }
+}
 .our-mission-section h2 {
   font-size: 3.4rem;
   letter-spacing: 8px;
@@ -444,6 +496,14 @@ header .sign-up-container span a:hover {
   flex-direction: row;
   padding-top: 40px;
 }
+@media (max-width: 800px) {
+  .our-mission-section .mission-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
 .our-mission-section .mission-container .mission-text-container {
   width: 40%;
   background: white;
@@ -452,6 +512,12 @@ header .sign-up-container span a:hover {
   border-left-width: 5px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 800px) {
+  .our-mission-section .mission-container .mission-text-container {
+    margin-top: 50px;
+    width: 70%;
+  }
 }
 .our-mission-section .mission-container .mission-text-container h3 {
   font-size: 3rem;
@@ -464,6 +530,16 @@ header .sign-up-container span a:hover {
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
 }
+@media (max-width: 800px) {
+  .our-mission-section .mission-container .mission-img {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .our-mission-section .mission-container .mission-img {
+    width: 80%;
+  }
+}
 .benefits-section {
   display: flex;
   justify-content: center;
@@ -475,6 +551,11 @@ header .sign-up-container span a:hover {
   min-height: 650px;
   background: rgba(84, 222, 253, 0.6);
 }
+@media (max-width: 800px) {
+  .benefits-section {
+    min-height: 1300px;
+  }
+}
 .benefits-section h2 {
   font-size: 3.4rem;
   letter-spacing: 8px;
@@ -483,12 +564,26 @@ header .sign-up-container span a:hover {
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
 }
+@media (max-width: 800px) {
+  .benefits-section h2 {
+    width: 70%;
+    text-align: center;
+  }
+}
 .benefits-section .benefits-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row-reverse;
   margin-top: 40px;
+}
+@media (max-width: 800px) {
+  .benefits-section .benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 }
 .benefits-section .benefits-container .benefits-text-container {
   width: 40%;
@@ -498,6 +593,13 @@ header .sign-up-container span a:hover {
   border-left-width: 5px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 800px) {
+  .benefits-section .benefits-container .benefits-text-container {
+    margin-top: 50px;
+    width: 70%;
+    padding-bottom: 0;
+  }
 }
 .benefits-section .benefits-container .benefits-text-container h3 {
   font-size: 3rem;
@@ -510,6 +612,16 @@ header .sign-up-container span a:hover {
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
 }
+@media (max-width: 800px) {
+  .benefits-section .benefits-container .benefits-img {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .benefits-section .benefits-container .benefits-img {
+    width: 80%;
+  }
+}
 .process-section {
   display: flex;
   justify-content: center;
@@ -521,6 +633,11 @@ header .sign-up-container span a:hover {
   min-height: 700px;
   background: rgba(139, 225, 200, 0.4);
 }
+@media (max-width: 800px) {
+  .process-section {
+    min-height: 1300px;
+  }
+}
 .process-section h2 {
   font-size: 3.4rem;
   letter-spacing: 8px;
@@ -529,12 +646,26 @@ header .sign-up-container span a:hover {
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
 }
+@media (max-width: 800px) {
+  .process-section h2 {
+    width: 70%;
+    text-align: center;
+  }
+}
 .process-section .process-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   margin-top: 40px;
+}
+@media (max-width: 800px) {
+  .process-section .process-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 }
 .process-section .process-container .process-text-container {
   width: 40%;
@@ -544,6 +675,12 @@ header .sign-up-container span a:hover {
   border-left-width: 5px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 800px) {
+  .process-section .process-container .process-text-container {
+    margin-top: 50px;
+    width: 70%;
+  }
 }
 .process-section .process-container .process-text-container h3 {
   font-size: 3rem;
@@ -556,6 +693,16 @@ header .sign-up-container span a:hover {
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
 }
+@media (max-width: 800px) {
+  .process-section .process-container .process-img {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .process-section .process-container .process-img {
+    width: 80%;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -566,6 +713,7 @@ footer {
   background: #00bd9d;
   font-size: 1.4rem;
   line-height: 1.5;
+  padding-bottom: 20px;
 }
 footer .bottom-nav-bar {
   display: flex;
@@ -575,12 +723,23 @@ footer .bottom-nav-bar {
   width: 40%;
   margin: 12px 0;
 }
+@media (max-width: 800px) {
+  footer .bottom-nav-bar {
+    width: 100%;
+  }
+}
 footer .bottom-nav-bar a {
   text-decoration: none;
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
   color: black;
   transition: all 0.3s;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  footer .bottom-nav-bar a {
+    width: 100%;
+  }
 }
 footer .bottom-nav-bar a:hover {
   color: rgba(255, 255, 255, 0.8);

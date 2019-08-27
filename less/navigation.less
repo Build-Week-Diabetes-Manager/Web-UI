@@ -7,31 +7,51 @@
     position: fixed;
     top: 0;
 
+    @media @tablet {
+        .centerContent(center, center, column);
+        height: 235px;
+        position: static;
+        width: 100%;
+    }
+
     h1 {
         font-size: 2.1rem;
         margin-left: 3%;
+
+        @media @tablet {
+            margin: 20px 0 0;
+        }
     }
 
     .nav-links {
-        .centerContent(flex-end, center, row);
+        .centerContent(center, flex-end, row);
         width: 60%;
+
+        @media @tablet {
+            .centerContent(center, flex-end, column);
+            padding-top: 20px;
+            width: 100%;
+        }
 
         a {
             width: 100px;
             line-height: 45px;
             text-align: center;
             padding: 1% 2%;
-            // margin: 0 1%;
             font-size: 1.8rem;
             text-decoration: none;
             font-family: @plainTextFont;
             color: black;
             transition: all .3s;
         
+            @media @tablet {
+                width: 96%;
+            }
+
             &:hover {
                 background: @hoverBlue;
                 color: @fadedWhite;
             }
-        }
+        } // a
     } // .nav-links
 } // .top-nav-bar
