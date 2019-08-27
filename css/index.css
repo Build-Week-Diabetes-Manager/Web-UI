@@ -765,4 +765,9 @@ footer span a:hover {
   height: 100vh;
   min-height: 820px;
   background: rgba(0, 210, 145, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-container .teammate {
+  width: 30%;
 }

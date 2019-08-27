@@ -759,3 +759,56 @@ footer span a {
 footer span a:hover {
   color: white;
 }
+.banner-img {
+  width: 100%;
+  margin: 0;
+}
+.banner {
+  padding-bottom: 10px;
+  width: 100%;
+  background: #fffbfa;
+}
+.banner h1 {
+  text-align: center;
+  padding: 2%;
+  font-size: 5rem;
+}
+.team-container {
+  width: 100%;
+  min-height: 820px;
+  background: #fffbfa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.team-container h2 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 1%;
+  text-align: center;
+}
+.team-container p {
+  font-size: 2.2rem;
+  margin: 0;
+  padding: 2%;
+  text-align: center;
+}
+.team-container .teammate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  margin: 2%;
+}
+.team-container .teammate img {
+  margin: 3%;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+}
+.team-container .teammate a {
+  color: black;
+  padding: 1%;
+}
