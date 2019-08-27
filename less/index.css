@@ -762,16 +762,19 @@ footer span a:hover {
 .banner-img {
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 .banner {
   padding-bottom: 10px;
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
+  margin: 0;
 }
 .banner h1 {
   text-align: center;
   padding: 2%;
   font-size: 5rem;
+  margin: 0;
 }
 .team-container {
   width: 100%;
