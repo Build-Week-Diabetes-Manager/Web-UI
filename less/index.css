@@ -870,6 +870,82 @@ header .sign-up-container span a:hover {
   color: rgba(252, 252, 252, 0.8);
   cursor: pointer;
 }
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: rgba(252, 252, 252, 0.8);
+  width: 100%;
+  padding: 80px 0;
+}
+@media (max-width: 1200px) {
+  .signin-container {
+    padding: 140px 0 60px;
+  }
+}
+@media (max-width: 1000px) {
+  .signin-container {
+    padding-top: 60px;
+  }
+}
+.signin-container .signin-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  background: rgba(139, 225, 200, 0.4);
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+.signin-container .signin-box form {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.signin-container .signin-box form h1 {
+  font-size: 4rem;
+}
+.signin-container .signin-box form p {
+  font-size: 1.8rem;
+}
+.signin-container .signin-box form label {
+  font-size: 2rem;
+}
+.signin-container .signin-box form input {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 10px 0 15px;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+.signin-container .signin-box form .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+  background: #00bd9d;
+  font-size: 1.8rem;
+  margin: 12px auto;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s;
+}
+@media (max-width: 500px) {
+  .signin-container .signin-box form .submit-button {
+    width: 70%;
+  }
+}
+.signin-container .signin-box form .submit-button:hover {
+  background: rgba(50, 180, 150, 0.8);
+  color: rgba(252, 252, 252, 0.8);
+  cursor: pointer;
+}
 footer {
   display: flex;
   justify-content: center;
