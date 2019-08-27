@@ -766,7 +766,7 @@ footer span a:hover {
 .banner {
   padding-bottom: 10px;
   width: 100%;
-  background: #fffbfa;
+  background: rgba(255, 255, 255, 0.8);
 }
 .banner h1 {
   text-align: center;
@@ -776,7 +776,7 @@ footer span a:hover {
 .team-container {
   width: 100%;
   min-height: 820px;
-  background: #fffbfa;
+  background: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
