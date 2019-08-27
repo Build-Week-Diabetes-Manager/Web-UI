@@ -389,9 +389,9 @@ p {
 }
 .top-nav-bar .nav-links a {
   width: 100px;
-  line-height: 38px;
+  line-height: 31px;
   text-align: center;
-  padding: 1% 2%;
+  padding: 2% 2%;
   font-size: 1.8rem;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -722,8 +722,10 @@ header .sign-up-container span a:hover {
 .about-team-banner h1 {
   font-size: 5rem;
   width: 40%;
+  padding: 10px 0;
   background: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   text-align: center;
 }
 .our-team-section {
@@ -731,7 +733,7 @@ header .sign-up-container span a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background: rgba(84, 222, 253, 0.6);
+  background-image: linear-gradient(rgba(84, 222, 253, 0.6), rgba(139, 225, 210, 0.8));
   width: 100%;
   flex-wrap: wrap;
 }
