@@ -1,0 +1,65 @@
+header {
+    background: url('../images/header-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 92vh;
+    min-height: 500px;
+    
+    @media @tablet {
+        min-height: 800px;
+    }
+
+    .header-container {
+        width: 50%;
+        margin-left: 40px;
+        padding: 150px 0 0;
+        line-height: 1;
+        
+        h1 {
+            font-size: 4.0rem;
+        }
+
+        p {
+            font-size: 2.2rem;
+        }
+    } // .header-container
+
+    .sign-up-container{
+        .centerContent(center, center, column);
+        width: 30%;
+
+        @media @tablet {
+            width: 80%;
+        }
+
+        button{
+            width: 100%;
+            background: @deepBlue;
+            font-size: 1.8rem;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: @plainTextFont;
+            transition: all .3s;
+
+            &:hover {
+                background: @hoverBlue;
+                color: @fadedWhite;
+                cursor: pointer;
+            }
+        }
+
+        span {
+            font-family: @plainTextFont;
+            text-align: center;
+            font-size: 1.3rem;
+            transition: all .3s;
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    } // .sign-up-container
+} // header
