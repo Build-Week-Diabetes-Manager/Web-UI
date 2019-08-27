@@ -7,11 +7,14 @@
     position: fixed;
     top: 0;
 
+    @media @smallDesktop {
+        width: 100%;
+    }
+
     @media @tablet {
         .centerContent(center, center, column);
         height: 235px;
         position: static;
-        width: 100%;
     }
 
     h1 {
@@ -24,7 +27,7 @@
     }
 
     .nav-links {
-        .centerContent(center, flex-end, row);
+        .centerContent(flex-end, flex-end, row);
         width: 60%;
 
         @media @tablet {
@@ -35,7 +38,7 @@
 
         a {
             width: 100px;
-            line-height: 45px;
+            line-height: 38px;
             text-align: center;
             padding: 1% 2%;
             font-size: 1.8rem;
