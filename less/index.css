@@ -3,6 +3,10 @@
   transform: translate(0px) !important;
   transition: all 1s;
 }
+.fade-in-mobile {
+  opacity: 1 !important;
+  transition: all 1s;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -395,9 +399,8 @@ p {
 }
 .top-nav-bar .nav-links a {
   width: 100px;
-  line-height: 31px;
+  line-height: 60px;
   text-align: center;
-  padding: 2% 2%;
   font-size: 1.8rem;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -406,7 +409,7 @@ p {
 }
 @media (max-width: 1000px) {
   .top-nav-bar .nav-links a {
-    width: 96%;
+    width: 100%;
   }
 }
 .top-nav-bar .nav-links a:hover {
@@ -544,6 +547,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 1000px) {
   .our-mission-section .mission-container .mission-img {
+    transform: translateX(0);
     width: 40%;
   }
 }
@@ -623,12 +627,13 @@ header .sign-up-container span a:hover {
   width: 30%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
-  opacity: 0;
   transform: translateX(-300px);
+  opacity: 0;
 }
 @media (max-width: 1000px) {
   .benefits-section .benefits-container .benefits-img {
     width: 40%;
+    transform: translateX(0);
   }
 }
 @media (max-width: 500px) {
@@ -719,6 +724,7 @@ header .sign-up-container span a:hover {
 @media (max-width: 1000px) {
   .process-section .process-container .process-img {
     width: 40%;
+    transform: translateX(0);
   }
 }
 @media (max-width: 500px) {
