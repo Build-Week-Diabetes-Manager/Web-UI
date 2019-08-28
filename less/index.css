@@ -838,7 +838,7 @@ header .sign-up-container span a:hover {
   display: flex;
   align-items: center;
   font-size: 1.6rem;
-  margin-top: -18px;
+  margin-top: -10px;
 }
 .our-team-section .team-mate .team-mate-info .icons {
   display: flex;
@@ -848,11 +848,16 @@ header .sign-up-container span a:hover {
 .our-team-section .team-mate .team-mate-info i {
   font-size: 3.5rem;
   color: black;
-  margin-top: -12px;
   transition: all 0.3s;
 }
 .our-team-section .team-mate .team-mate-info i:hover {
   transform: scale(1.2);
+}
+.our-team-section .team-mate .team-mate-info .fa-linkedin:hover {
+  color: #07579C;
+}
+.our-team-section .team-mate .team-mate-info .fa-twitter:hover {
+  color: #1da1f2;
 }
 .signup-container {
   display: flex;
