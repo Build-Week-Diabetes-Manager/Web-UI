@@ -840,6 +840,11 @@ header .sign-up-container span a:hover {
   font-size: 1.6rem;
   margin-top: -18px;
 }
+.our-team-section .team-mate .team-mate-info .icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
 .our-team-section .team-mate .team-mate-info i {
   font-size: 3.5rem;
   color: black;
