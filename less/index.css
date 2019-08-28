@@ -345,6 +345,7 @@ p {
   height: 60px;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 @media (max-width: 1200px) {
   .top-nav-bar {
@@ -533,6 +534,8 @@ header .sign-up-container span a:hover {
   width: 30%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transform: translateX(300px);
 }
 @media (max-width: 1000px) {
   .our-mission-section .mission-container .mission-img {
@@ -615,6 +618,8 @@ header .sign-up-container span a:hover {
   width: 30%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transform: translateX(-300px);
 }
 @media (max-width: 1000px) {
   .benefits-section .benefits-container .benefits-img {
@@ -703,6 +708,8 @@ header .sign-up-container span a:hover {
   width: 30%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+  transform: translateX(300px);
+  opacity: 0;
 }
 @media (max-width: 1000px) {
   .process-section .process-container .process-img {
@@ -713,6 +720,11 @@ header .sign-up-container span a:hover {
   .process-section .process-container .process-img {
     width: 80%;
   }
+}
+.fade-in {
+  opacity: 1 !important;
+  transform: translate(0px) !important;
+  transition: all 1s;
 }
 .about-team-banner {
   display: flex;
