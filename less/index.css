@@ -1,11 +1,39 @@
 .fade-in {
   opacity: 1 !important;
   transform: translate(0px) !important;
-  transition: all 1s;
+  transition: all 0.8s;
 }
 .fade-in-mobile {
   opacity: 1 !important;
-  transition: all 1s;
+  transition: all 0.8s;
+}
+@keyframes homeLinkSlide {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes aboutLinkSlide {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes signupLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -415,6 +443,15 @@ p {
 .top-nav-bar .nav-links a:hover {
   background: rgba(50, 100, 180, 0.8);
   color: rgba(252, 252, 252, 0.8);
+}
+.top-nav-bar .nav-links .home-link {
+  animation: homeLinkSlide 1s;
+}
+.top-nav-bar .nav-links .about-link {
+  animation: aboutLinkSlide 0.6s;
+}
+.top-nav-bar .nav-links .sign-up-link {
+  animation: signupLinkFade 0.6s;
 }
 header {
   background: url('../home-page-images/header-background.jpg');
