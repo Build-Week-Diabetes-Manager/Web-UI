@@ -4,9 +4,9 @@
     width: 80%;
     max-width: 1300px;
     height: 60px;
-    // padding: 20px 0;
     position: fixed;
     top: 0;
+    z-index: 100;
 
     @media @smallDesktop {
         width: 100%;
@@ -39,9 +39,8 @@
 
         a {
             width: 100px;
-            line-height: 31px;
+            line-height: 60px;
             text-align: center;
-            padding: 2% 2%;
             font-size: 1.8rem;
             text-decoration: none;
             font-family: @plainTextFont;
@@ -49,7 +48,7 @@
             transition: all .3s;
         
             @media @tablet {
-                width: 96%;
+                width: 100%;
             }
 
             &:hover {
@@ -57,5 +56,17 @@
                 color: @fadedWhite;
             }
         } // a
+
+        .home-link {
+            animation: homeLinkSlide 1s;
+        }
+
+        .about-link {
+            animation: aboutLinkSlide .6s;
+        }
+
+        .sign-up-link {
+            animation: signupLinkFade .6s;
+        }
     } // .nav-links
 } // .top-nav-bar

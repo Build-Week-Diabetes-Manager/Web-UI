@@ -55,8 +55,11 @@
             width: 30%;
             border-radius: 5px;
             box-shadow: 5px 5px 10px 0px @fadedBlack;
-            
+            opacity: 0; 
+            transform: translateX(300px);
+   
             @media @tablet {
+                transform: translateX(0);
                 width: 40%;
             }
 
@@ -130,9 +133,12 @@
             width: 30%;
             border-radius: 5px;
             box-shadow: 5px 5px 10px 0px @fadedBlack;
-            
+            transform: translateX(-300px);
+            opacity: 0;
+
             @media @tablet {
                 width: 40%;
+                transform: translateX(0);
             }
 
             @media @phone {
@@ -215,9 +221,12 @@
             width: 30%;
             border-radius: 5px;
             box-shadow: 5px 5px 10px 0px @fadedBlack;
-
+            transform: translateX(300px);
+            opacity: 0;
+            
             @media @tablet {
                 width: 40%;
+                transform: translateX(0);
             }
 
             @media @phone {
