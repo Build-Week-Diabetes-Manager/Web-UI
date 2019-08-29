@@ -23,8 +23,6 @@ The following `.less` files are specific to <strong>only</strong> their named `.
     - home-header.less
     - home-main-content.less
     - about-main-content.less
-    - sign-up.less
-    - sign-in.less
 
 <strong> Please Note: </strong> All CSS keyframe animations, as well as, classes added to elements through JavaScript will be found within the `mixins.less` file. 
 
