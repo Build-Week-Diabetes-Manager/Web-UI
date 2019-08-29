@@ -36,8 +36,8 @@ header {
             margin-left: 0;
         }
         
-        h1 {
-            font-size: 4.0rem;
+        .header-logo {
+            width: 70%;
         }
 
         p {
@@ -46,11 +46,10 @@ header {
     } // .header-container
 
     .sign-up-container{
-        .centerContent(center, center, column);
+        .centerContent(center, flex-start, column);
         width: 40%;
 
         @media @tablet {
-            align-items: flex-start;
             width: 100%;
         }
 
