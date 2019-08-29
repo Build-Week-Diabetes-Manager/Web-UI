@@ -457,20 +457,43 @@ header {
   background: url('../home-page-images/header-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 92vh;
-  min-height: 500px;
+  background-position: left;
+  height: 800px;
 }
 @media (max-width: 1000px) {
   header {
-    min-height: 800px;
+    background-position: left;
+    height: 500px;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    background: url('../home-page-images/mobile-header-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
   }
 }
 header .header-container {
-  width: 50%;
+  width: 40%;
   margin-left: 40px;
   padding: 150px 0 0;
   line-height: 1;
+}
+@media (max-width: 1000px) {
+  header .header-container {
+    width: 35%;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  header .header-container {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 header .header-container h1 {
   font-size: 4rem;
@@ -483,11 +506,17 @@ header .sign-up-container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
 }
 @media (max-width: 1000px) {
   header .sign-up-container {
-    width: 80%;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header .sign-up-container {
+    align-items: center;
   }
 }
 header .sign-up-container button {
@@ -527,7 +556,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 1000px) {
   .our-mission-section {
-    min-height: 1000px;
+    height: 1100px;
   }
 }
 .our-mission-section h2 {
@@ -590,7 +619,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 500px) {
   .our-mission-section .mission-container .mission-img {
-    width: 80%;
+    width: 60%;
   }
 }
 .benefits-section {
@@ -605,7 +634,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 1000px) {
   .benefits-section {
-    min-height: 900px;
+    height: 1100px;
   }
 }
 .benefits-section h2 {
@@ -675,7 +704,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 500px) {
   .benefits-section .benefits-container .benefits-img {
-    width: 80%;
+    width: 60%;
   }
 }
 .process-section {
@@ -691,7 +720,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 1000px) {
   .process-section {
-    min-height: 1000px;
+    height: 1200px;
   }
 }
 .process-section h2 {
@@ -739,6 +768,15 @@ header .sign-up-container span a:hover {
     width: 70%;
   }
 }
+.process-section .process-container .process-text-container span {
+  opacity: 0;
+  transition: all 0.3s;
+  font-size: 0.2rem;
+}
+.process-section .process-container .process-text-container .number-grow {
+  opacity: 1;
+  font-size: 3rem;
+}
 .process-section .process-container .process-text-container h3 {
   font-size: 3rem;
 }
@@ -766,7 +804,7 @@ header .sign-up-container span a:hover {
 }
 @media (max-width: 500px) {
   .process-section .process-container .process-img {
-    width: 80%;
+    width: 60%;
   }
 }
 .about-team-banner {
