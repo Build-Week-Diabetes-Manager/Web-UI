@@ -1,6 +1,6 @@
 # Web-UI
 
-This is a marketing page for a Diabetes Manager Application, featuring three pages: Home, About, and Sign Up.
+This is a marketing page for a Diabetes Manager Application. This application is responsible for tracking, monitoring, and predicting the user's future bloodsugar levels. The website features three pages: Home, About, and Sign Up.
 
 ## <u> HTML Files </u>
 
