@@ -399,13 +399,15 @@ p {
     position: static;
   }
 }
-.top-nav-bar h1 {
-  font-size: 2.1rem;
-  margin-left: 3%;
+.top-nav-bar .logo {
+  width: 14%;
+  margin-left: 2%;
 }
 @media (max-width: 1000px) {
-  .top-nav-bar h1 {
+  .top-nav-bar .logo {
     margin: 20px 0 0;
+    width: 20%;
+    min-width: 175px;
   }
 }
 .top-nav-bar .nav-links {
@@ -495,8 +497,8 @@ header .header-container {
     margin-left: 0;
   }
 }
-header .header-container h1 {
-  font-size: 4rem;
+header .header-container .header-logo {
+  width: 70%;
 }
 header .header-container p {
   font-size: 2.2rem;
@@ -504,13 +506,12 @@ header .header-container p {
 header .sign-up-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   width: 40%;
 }
 @media (max-width: 1000px) {
   header .sign-up-container {
-    align-items: flex-start;
     width: 100%;
   }
 }
@@ -783,6 +784,9 @@ header .sign-up-container span a:hover {
 .process-section .process-container .process-text-container p {
   font-size: 1.8rem;
 }
+.process-section .process-container .process-text-container .disclaimer {
+  font-size: 1.4rem !important;
+}
 .process-section .process-container .process-text-container ol li {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
@@ -887,6 +891,12 @@ header .sign-up-container span a:hover {
   font-size: 3.5rem;
   color: black;
   transition: all 0.3s;
+  margin: 0 10px 0;
+}
+@media (max-width: 1000px) {
+  .our-team-section .team-mate .team-mate-info i {
+    margin: 0 10px 0;
+  }
 }
 .our-team-section .team-mate .team-mate-info i:hover {
   transform: scale(1.2);
@@ -896,158 +906,6 @@ header .sign-up-container span a:hover {
 }
 .our-team-section .team-mate .team-mate-info .fa-twitter:hover {
   color: #1da1f2;
-}
-.signup-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background: rgba(252, 252, 252, 0.8);
-  width: 100%;
-  padding: 80px 0;
-}
-@media (max-width: 1200px) {
-  .signup-container {
-    padding: 140px 0 60px;
-  }
-}
-@media (max-width: 1000px) {
-  .signup-container {
-    padding-top: 60px;
-  }
-}
-.signup-container .signup-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 60%;
-  background: rgba(84, 222, 253, 0.6);
-  padding: 10px 50px;
-  border-radius: 5px;
-}
-.signup-container .signup-box form {
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-.signup-container .signup-box form h1 {
-  font-size: 4rem;
-}
-.signup-container .signup-box form p {
-  font-size: 1.8rem;
-}
-.signup-container .signup-box form label {
-  font-size: 2rem;
-}
-.signup-container .signup-box form input {
-  width: 90%;
-  padding: 12px 20px;
-  margin: 10px 0 15px;
-  font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
-  border: none;
-  border-radius: 5px;
-}
-.signup-container .signup-box form .submit-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 40%;
-  background: #3cb4fa;
-  font-size: 1.8rem;
-  margin: 12px auto;
-  padding: 10px 40px;
-  border: none;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  transition: all 0.3s;
-}
-@media (max-width: 1000px) {
-  .signup-container .signup-box form .submit-button {
-    width: 70%;
-  }
-}
-.signup-container .signup-box form .submit-button:hover {
-  background: rgba(50, 100, 180, 0.8);
-  color: rgba(252, 252, 252, 0.8);
-  cursor: pointer;
-}
-.signin-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background: rgba(252, 252, 252, 0.8);
-  width: 100%;
-  padding: 80px 0;
-}
-@media (max-width: 1200px) {
-  .signin-container {
-    padding: 140px 0 60px;
-  }
-}
-@media (max-width: 1000px) {
-  .signin-container {
-    padding-top: 60px;
-  }
-}
-.signin-container .signin-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 60%;
-  background: rgba(139, 225, 200, 0.4);
-  padding: 10px 50px;
-  border-radius: 5px;
-}
-.signin-container .signin-box form {
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-.signin-container .signin-box form h1 {
-  font-size: 4rem;
-}
-.signin-container .signin-box form p {
-  font-size: 1.8rem;
-}
-.signin-container .signin-box form label {
-  font-size: 2rem;
-}
-.signin-container .signin-box form input {
-  width: 90%;
-  padding: 12px 20px;
-  margin: 10px 0 15px;
-  font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
-  border: none;
-  border-radius: 5px;
-}
-.signin-container .signin-box form .submit-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 40%;
-  background: #00bd9d;
-  font-size: 1.8rem;
-  margin: 12px auto;
-  padding: 10px 40px;
-  border: none;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  transition: all 0.3s;
-}
-@media (max-width: 1000px) {
-  .signin-container .signin-box form .submit-button {
-    width: 70%;
-  }
-}
-.signin-container .signin-box form .submit-button:hover {
-  background: rgba(50, 180, 150, 0.8);
-  color: rgba(252, 252, 252, 0.8);
-  cursor: pointer;
 }
 footer {
   display: flex;
